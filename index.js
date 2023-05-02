@@ -4,7 +4,7 @@ const path = require("path")
 const app = express()
 
 // Serve the public directory as a static directory
-app.use(express.static(path.join(__dirname, "public")))
+app.use("/", express.static(path.join(__dirname, "public")))
 
 // Handle other routes or middleware as needed
 // ...
